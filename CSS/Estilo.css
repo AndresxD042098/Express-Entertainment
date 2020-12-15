@@ -1,0 +1,246 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+body{
+	font-family: 'open sans';
+}
+.contenedor{
+	padding:100px 0; /* para la separacion de secciones*/
+	width: 90% ;
+	max-width:1500px;
+	margin: auto;
+	overflow: hidden; 
+}
+.titulo{
+	color: #808080;
+	font-size: 55px;
+	text-align: left;
+	margin-bottom: 100px;
+}
+/* header*/
+header{
+	width: 100%;
+	height: 600px;
+	background: #B4B4B4; 
+	background: -webkit-linear-gradient(to right, hsla(340, 95%, 50%, 0.1), hsla(317, 45%, 52%, 0.1)),url(../CSS/portada2.jpeg);
+	background: linear-gradient(to right, hsla(340, 95%, 50%, 0.1), hsla(317, 45%, 52%, 0.1)),url(../CSS/portada2.jpeg);
+	background-size: cover;
+	background-attachment: fixed;
+	position: relative;
+}
+nav{
+	text-align: right;
+	padding: 30px 50px 0 0;
+}
+nav > a{
+	color: #fff;
+	font-weight: 300;
+	text-decoration:none;
+	margin-right: 10px;
+}
+nav > a:hover {
+	text-decoration: underline;
+}
+header .textos-header{
+	color: #4d0686;
+	display: flex;
+	height: 430px;
+	width: 100%;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center; 
+}
+/*Titulo de la pagina*/
+.textos-header h1{
+	font-size: 50px;
+	color: #00E0FF;
+}
+/*Sub titulo*/
+.textos-header h2{
+	font-size: 30px;
+	font-weight: 300;
+	color: #00E0FF;
+}
+.wave{
+	position: absolute;
+	bottom: 0;
+	width: 101%;
+}
+/*about us*/
+.contenedor-sobre-nosotros{
+	display: flex;
+	justify-content: space-evely;
+}
+.imagen-about-us{
+	width: 48%;
+}
+.sobre-nosotros .contenido-textos{
+	width: 48%;
+}
+.contenido-textos h3{
+	margin-bottom: 20px;
+}
+.contenido-textos h3 span{
+	background: #4d0686;
+	color: #fff;
+	border-radius: 50%;
+	display: inline-block;
+	text-align: center;
+	width: 30px;
+	height: 30px;
+	padding: 5px;
+	box-shadow: 0 0 6px 0px rgba(0, 0, 0, .5);
+margin-right: 5px;
+
+}
+.contenido-textos{
+	padding: 50px 50px 30px 20px;
+	font-weight: 300;
+	text-align: justify;
+}
+/*galery*/
+.Portafolio{
+	background: #4d0686;
+}
+.galeria-port{
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+}
+.imagen-port{
+	width: 25%;
+	margin-bottom: 5px;
+	height: 250px;
+	position: relative;
+	overflow: hidden;
+	cursor: pointer;
+	box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+}
+.imagen-port{
+	width: 100%
+	height:100%;
+	object-fit: cover;
+	display: block;
+}
+.hover-galeria{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	transform: scale(0);
+	background: hsla(273,91,27,0.7);
+	transition: transform .5s;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.hover-galeria img{
+	width: 50%;
+}
+.hover-galeria p{
+	color: #fff;
+}
+.imagen-port:hover .hover-galeria{
+	transform: scale(1);
+}
+.cards{
+	display: flex;
+	justify-content: space-evenly;
+}
+.cards .card{
+	background: #4d0686;
+	display: flex;
+	width: 46%;
+	height: 200px;
+	align-items: center;
+	justify-content: space-evenly;
+	border-radius: 5px;
+	box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.6);
+}
+/*Tmanano de la imagen de lo que dice la banda :v*/
+.cards .card img{
+	width: 25%;
+	height: 50%;
+	object-fit: cover;
+	border: 3px solid #fff;
+	border-radius: 25%;
+	display: block;
+}
+
+.cards .card > .contenido-texto-card{
+	width: 60%; 
+	color: #fff;
+
+}
+
+.cards .card > .contenido-texto-card p{
+	font-weight:300;
+	padding-top:10px; 
+}
+
+.about-services{
+	background: #f2f2f2;
+	padding-bottom: 30px;
+}
+
+.contenedor{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.servicio-ind{
+	width: 28%;
+	text-align:center; 
+}
+.servicio-ind img{
+	width: 90%;
+}
+
+.servicio-ind h3{
+	margin: 10px 0;
+}
+
+.servicio-ind p{
+	font-weight: 300;
+	text-align: justify;
+}
+
+footer{
+	background: #414141;
+	padding: 60px 0 30px 0;
+	margin:auto;
+	overflow: hidden;
+}
+
+.contenedor-footer{
+	display:flex;
+	width: 90%;
+	justify-content: space-evenly;
+	margin:auto;
+	padding-bottom: 50px;
+	border-bottom: 1px solid #ccc; 
+}
+
+.content-foo{
+	text-align:center;
+}
+.content-foo h4{
+	text-align:center;
+	border-bottom: 3px solid #af20d3;
+	padding-bottom: 5px ;
+	margin-bottom: 10px;
+}
+
+.content-foo p{
+	color: #ccc;
+}
+.titulo-final{
+	text-align: center;
+	font-size: 20px 0 0 0;
+	color:#9e9797;
+}
